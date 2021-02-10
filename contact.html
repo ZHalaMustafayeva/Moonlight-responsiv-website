@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="sidebar">
+        <div class="sidebar-wrapper">
+            <div class="logo">
+                <p>MOON<span>LIGHT</span></hp>
+            </div>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i>About</a></li>
+                <li><a href="entries.html"><i class="fas fa-pen"></i>Entries</a></li>
+                <li><a href="work.html"><i class="far fa-image"></i>Work</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i>Contact</a></li>
+            </ul>
+            <i class="fas fa-bars" onclick="myFunc(this)"></i>
+        </div>
+    </section>
+    <section id="content">
+        <div class="content-wrapper">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89547.07313643052!2d9.107691988032181!3d45.46283285052586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1493f1275e7%3A0x3cffcd13c6740e8d!2sMilan%2C%20Metropolitan%20City%20of%20Milan%2C%20%C4%B0taliya!5e0!3m2!1saz!2s!4v1612075348167!5m2!1saz!2s" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <form id="myform" onsubmit="return validate();">
+                <div id="error"></div>
+                <div class="input_field">
+                    <input type="text" placeholder="Your name..." id="name">
+                </div>
+                <div class="input_field">
+                    <input type="text"  placeholder="Your email..." id="email">
+                </div>
+                <div class="input_field">
+                    <input type="text" placeholder="Subject..." id="subject">
+                </div>
+                <div class="input_field">
+                    <textarea placeholder="Message" id="message"></textarea>
+                </div>
+                <div class="btn">
+                    <input type="submit">
+                </div>
+                    </div>
+    </section>
+    <script src="https://kit.fontawesome.com/187d954b3d.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
